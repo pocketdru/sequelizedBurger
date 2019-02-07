@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Eat-Da-Burger!</h1>
+    <img src="https://www.freepngimg.com/thumb/burger/6-2-burger-png-image-thumb.png">
+    <!-- <div class="left-side"></div>
+        <div class="right-side"></div> -->
+
+<div class="all-burgers">
+    <div class="left-side">
+        <ul>{{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="right-side">
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    </div>
+    
+    <h3>Enter a burger you want to eat.</h3>
+
+    <form>
+        <div class="form-group fafa">
+            <label for="burger-text"></label>
+            <textarea id="burger-text" rows="4" cols="50"></textarea>
+            <button type="submit" id="submit">Add a burger</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,63 @@
+body {
+    background-image: url("../img/food.png");
+}
+
+body,
+.container,
+.container {
+    margin: 0 auto;
+}
+
+.container {
+    width: 1000px;
+}
+
+.container h1, .container h3 {
+    text-align: center;
+    color: #800000;
+}
+
+.container img, #burger-text, #submit {
+    display: block;
+    margin: 0 auto;
+}
+
+#submit {
+    position: relative;
+    top: 8px;
+    padding: 8px;
+}
+
+.all-burgers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side, .right-side {
+    width: 300px;
+
+}
+
+.right-side {
+  background-color: rgba(255, 255, 255, 0.3);
+   /* outline: solid #fff 2px; */
+}
+
+/* .right-side .devour {
+    display: none;
+} */
+
+.all-burgers ul {
+    list-style: none;
+}
+
+.all-burgers ul li {
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.right-side li {
+    border: solid rgba(0, 0, 0, 0.3) 1px;
+
+}
